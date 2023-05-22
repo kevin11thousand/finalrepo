@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #ffa07a; /* Peach color */
+    }
+
+    .navbar-brand {
+      color: #000; /* Changed font color to black */
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+      color: #000; /* Changed font color to black */
+    }
+
+    .navbar {
+      background-color: #f8f9fa; /* Light gray color */
+      padding: 10px 20px;
+      border-radius: 0;
+      border-bottom: 1px solid #ddd; /* Added a bottom border */
+    }
+
+    .navbar-toggler-icon {
+      background-color: #000; /* Changed toggle icon color to black */
+    }
+
+    main {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #000000;
+    }
+
+    form {
+      margin-top: 50px;
+    }
+
+    .form-group {
+      text-align: left;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+
+    .btn-block {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container">
+				<a class="navbar-brand" href="/views/index.ejs">Final Project</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="/index">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/register">Register</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 offset-md-3">
+					<h1>Login</h1>
+					<form action="/login" method="post">
+						<div class="form-group">
+							<label for="email">Email address</label>
+							<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+						</div>
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" class="form-control" id="password" placeholder="Password" name="password">
+						</div>
+						<button type="submit" class="btn btn-primary btn-block">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

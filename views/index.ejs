@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Landing Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin-bottom: 60px; /* Added margin for footer */
+    }
+
+    header {
+      background-color: #ffa07a; /* Peach color */
+    }
+
+    .navbar-brand {
+      color: #000; /* Changed font color to black */
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+      color: #000; /* Changed font color to black */
+    }
+
+    .navbar {
+      background-color: #f8f9fa; /* Light gray color */
+      padding: 10px 20px;
+      border-radius: 0;
+      border-bottom: 1px solid #ddd; /* Added a bottom border */
+    }
+
+    .navbar-toggler-icon {
+      background-color: #000; /* Changed toggle icon color to black */
+    }
+
+    main {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #000000;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 50px;
+      color: #555;
+    }
+
+    .btn-light {
+      background-color: #fff;
+      color: #000000;
+      border-color: #000000;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 4px;
+    }
+
+    .btn-light:hover {
+      background-color: #007bff;
+      color: #fff;
+      border-color: #007bff;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container">
+				<a class="navbar-brand" href="/views/index.ejs">Final Project</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="/index">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/register">Register</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-8 offset-md-2">
+					<h1>Online Registration System</h1>
+					 <p>Click Login to proceed</p>
+					<button class="btn btn-light" onclick="location.href='/login'">Login</button>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<p>Credits: Mon, Jelou, Mark, Jim</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
